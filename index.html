@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn:Play</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ffe6e6, #e6f3ff);
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 90px;
+    position: absolute;
+    top: 154px;
+    left: 173px;
+    width: 1071px;
+    height: 126px;
+    text-align: center;
+    color: #0095A9;
+}
+
+.subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    position: absolute;
+    top: 310px;
+    left: 287px;
+    width: 707px;
+    height: 41px;
+    text-align: center;
+    color: #666;
+}
+
+.characters {
+    position: absolute;
+    width: 497px;
+    height: 481px;
+    top: 337px;
+    left: 772px;
+}
+
+.start-button {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 24px;
+    position: absolute;
+    width: 438px;
+    height: 101px;
+    top: 587px;
+    left: 112px;
+    border-radius: 25px;
+    background-color: #0095A9;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.start-button:hover {
+    background-color: #007a8c;
+}
+
+.login-text {
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    top: 701px;
+    left: 156px;
+    width: 350px;
+    height: 72px;
+    text-align: center;
+}
+
+.login-text a {
+    color: #0095A9;
+    text-decoration: none;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}
+
+</style>
+<body>
+    <div class="container">
+        <h1 class="title">Learn:Play</h1>
+        <p class="subtitle">Where Every Review is a Game-Changing Adventure!</p>
+        <img src="1g.png" class="characters" alt="Characters Image">
+        <button class="start-button" onclick="location.href='signup.html'">Start learning</button>
+        <p class="login-text">Already have an account? <a href="login.html">Login.</a></p>
+    </div>
+</body>
+</html>

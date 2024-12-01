@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload - Learn:Play</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/sffjunkie/pptx2json@main/pptx2json.js"></script>
+</head>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #fdeff4, #f6f4d2);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .welcome-box {
+            width: 500px;
+            background: #fff;
+            border-radius: 25px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            position: relative;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .title {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 40px;
+            text-align: center;
+            color: #0095A9;
+        }
+
+        .subtitle {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            text-align: center;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .file-upload-section {
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .file-input {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+        }
+
+        .upload-button {
+            width: 100%;
+            padding: 15px;
+            background-color: #0095A9;
+            color: #fff;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .upload-button:hover {
+            background-color: #007a8c;
+        }
+
+        .note {
+            font-size: 14px;
+            color: #555;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Upload Your File</h1>
+    <form id="uploadForm" enctype="multipart/form-data" method="post" action="upload.php">
+      <input type="file" name="uploadedFile" id="uploadedFile" accept=".docx,.pdf,.pptx" required>
+      <button type="submit">Upload</button>
+                </form>
+
+                <p class="note">
+                    Allowed file types: PDF, DOCX, PPTX <br>
+                    Maximum file size: 25MB
+                </p>
+    </div>
+</body>
+</html>

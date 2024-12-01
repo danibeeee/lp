@@ -1,0 +1,121 @@
+/* Import Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Apply gradient background */
+body {
+    background: linear-gradient(135deg, #7b2ff7, #ff61a6);  /* Purple and Pink Gradient */
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    text-align: center;
+    backdrop-filter: blur(10px);  /* Frosted glass effect */
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+h1 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.question-box {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+button, .start-button {
+    background-color: #ff61a6;  /* Pink color for buttons */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover, .start-button:hover {
+    background-color: #ff3385;  /* Darker pink */
+    transform: scale(1.1);
+}
+
+button:focus, .start-button:focus {
+    outline: none;
+}
+
+/* Button to start the game (with 2P start specific style) */
+.start-button {
+    background-color: #7b2ff7; /* Purple */
+    font-size: 22px;
+    padding: 20px 40px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Style for form controls */
+input[type="file"], select {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+select {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    cursor: pointer;
+}
+
+/* Question text style */
+.question-text {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+    display: block;
+}
+
+/* Styling for the progress bar (if added in the future) */
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    margin: 20px 0;
+}
+
+.progress-bar-filled {
+    width: 50%;  /* You can adjust this based on quiz progress */
+    height: 100%;
+    background-color: #ff61a6;
+    transition: width 0.3s ease-in-out;
+}
